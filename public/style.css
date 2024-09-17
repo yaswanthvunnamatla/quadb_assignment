@@ -1,0 +1,203 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1e2b;
+    color: #7fffd4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #00e0ff;
+}
+
+.header-middle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-middle button {
+    background-color: #2b2f3a;
+    border: none;
+    color: #7fffd4;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.header-middle button:hover {
+    background-color: #00e0ff;
+    color: #1b1e2b;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Timer styling */
+.timer {
+    font-size: 1.5em;
+    color: #7fffd4;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #2b2f3a;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-hold{
+    background-color: #2b2f3a;
+    border: none;
+    color: #7fffd4;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.connect-telegram {
+    display: flex;
+    align-items: center;
+    background-color: #00e0ff;
+    color: #1b1e2b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.connect-telegram:hover {
+    background-color: #7fffd4;
+}
+
+.telegram-icon {
+    background-image: url('/path/to/telegram-icon.png');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+/* Toggle switch */
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #2b2f3a;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.toggle-label:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #7fffd4;
+    top: 2.5px;
+    left: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.toggle-input:checked + .toggle-label:before {
+    transform: translateX(25px);
+}
+
+/* Price section */
+.price-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: #00e0ff;
+}
+
+.current-price {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.price-change {
+    font-size: 1.2em;
+}
+
+.price-change span {
+    display: block;
+    font-size: 0.8em;
+    color: #7fffd4;
+}
+
+/* Table styling */
+.crypto-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.crypto-table th, .crypto-table td {
+    padding: 15px;
+    border-bottom: 1px solid #7fffd4;
+}
+
+.crypto-table th {
+    color: #7fffd4;
+    font-size: 1.2em;
+}
+
+.crypto-table td {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.crypto-table tr:nth-child(even) {
+    background-color: #2b2f3a;
+}
+
+.positive {
+    color: #00ff99;
+}
+
+.negative {
+    color: #ff5a5f;
+}
+.crypto-table td {
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO Clone</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HODLINFO</h1>
+            <div class="header-middle">
+                <button>INR</button>
+                <button>BTC</button>
+                <button>BUY BTC</button>
+            </div>
+            <div class="header-right">
+                <div class="timer">60</div>
+                <button class="connect-telegram">
+                    <i class="telegram-icon"></i> Connect Telegram
+                </button>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="toggle" class="toggle-input">
+                    <label for="toggle" class="toggle-label"></label>
+                </div>
+            </div>
+        </header>
+
+        <section class="price-info">
+            <div class="price-change">0.1% <span>5 Mins</span></div>
+            <div class="price-change">0.96% <span>1 Hour</span></div>
+            <div class="current-price">₹26,56,110</div>
+            <div class="price-change">2.73% <span>1 Day</span></div>
+            <div class="price-change">7.51% <span>7 Days</span></div>
+        </section>
+
+        <table class="crypto-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-data">
+                <!-- Data will be populated by JS -->
+            </tbody>
+        </table>
+        <div class="table-container">
+            <button class="btn-hold">Add holdInfo to homescreen</button> 
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
